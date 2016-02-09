@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AcronymsTableViewController.h
 //  AcronymsSearch
 //
 //  Created by Venkata Dheeraj Palur on 2/9/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AcronymsTableViewController : UITableViewController
 
 @end
-

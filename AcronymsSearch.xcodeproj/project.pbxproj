@@ -10,11 +10,11 @@
 		926E9D3629DE90358C97F6A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF64C24E1E3C4331126983DD /* libPods.a */; };
 		A206D0B11C6A65AE0061BA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0B01C6A65AE0061BA01 /* main.m */; };
 		A206D0B41C6A65AE0061BA01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0B31C6A65AE0061BA01 /* AppDelegate.m */; };
-		A206D0B71C6A65AE0061BA01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0B61C6A65AE0061BA01 /* ViewController.m */; };
 		A206D0BA1C6A65AE0061BA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A206D0B81C6A65AE0061BA01 /* Main.storyboard */; };
 		A206D0BC1C6A65AE0061BA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A206D0BB1C6A65AE0061BA01 /* Assets.xcassets */; };
 		A206D0BF1C6A65AE0061BA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A206D0BD1C6A65AE0061BA01 /* LaunchScreen.storyboard */; };
 		A206D0CA1C6A65AE0061BA01 /* AcronymsSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0C91C6A65AE0061BA01 /* AcronymsSearchTests.m */; };
+		A206D0D61C6A6A4E0061BA01 /* AcronymsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0D51C6A6A4E0061BA01 /* AcronymsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,6 @@
 		A206D0B01C6A65AE0061BA01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A206D0B21C6A65AE0061BA01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A206D0B31C6A65AE0061BA01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A206D0B51C6A65AE0061BA01 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A206D0B61C6A65AE0061BA01 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A206D0B91C6A65AE0061BA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A206D0BB1C6A65AE0061BA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A206D0BE1C6A65AE0061BA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +41,8 @@
 		A206D0C51C6A65AE0061BA01 /* AcronymsSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymsSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A206D0C91C6A65AE0061BA01 /* AcronymsSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcronymsSearchTests.m; sourceTree = "<group>"; };
 		A206D0CB1C6A65AE0061BA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A206D0D41C6A6A4E0061BA01 /* AcronymsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcronymsTableViewController.h; sourceTree = "<group>"; };
+		A206D0D51C6A6A4E0061BA01 /* AcronymsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcronymsTableViewController.m; sourceTree = "<group>"; };
 		BF64C24E1E3C4331126983DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,8 +98,8 @@
 			children = (
 				A206D0B21C6A65AE0061BA01 /* AppDelegate.h */,
 				A206D0B31C6A65AE0061BA01 /* AppDelegate.m */,
-				A206D0B51C6A65AE0061BA01 /* ViewController.h */,
-				A206D0B61C6A65AE0061BA01 /* ViewController.m */,
+				A206D0D41C6A6A4E0061BA01 /* AcronymsTableViewController.h */,
+				A206D0D51C6A6A4E0061BA01 /* AcronymsTableViewController.m */,
 				A206D0B81C6A65AE0061BA01 /* Main.storyboard */,
 				A206D0BB1C6A65AE0061BA01 /* Assets.xcassets */,
 				A206D0BD1C6A65AE0061BA01 /* LaunchScreen.storyboard */,
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A206D0B71C6A65AE0061BA01 /* ViewController.m in Sources */,
+				A206D0D61C6A6A4E0061BA01 /* AcronymsTableViewController.m in Sources */,
 				A206D0B41C6A65AE0061BA01 /* AppDelegate.m in Sources */,
 				A206D0B11C6A65AE0061BA01 /* main.m in Sources */,
 			);
