@@ -15,6 +15,9 @@
 		A206D0BF1C6A65AE0061BA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A206D0BD1C6A65AE0061BA01 /* LaunchScreen.storyboard */; };
 		A206D0CA1C6A65AE0061BA01 /* AcronymsSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0C91C6A65AE0061BA01 /* AcronymsSearchTests.m */; };
 		A206D0D61C6A6A4E0061BA01 /* AcronymsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0D51C6A6A4E0061BA01 /* AcronymsTableViewController.m */; };
+		A206D0DA1C6A80820061BA01 /* AcromineAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0D91C6A80820061BA01 /* AcromineAPI.m */; };
+		A206D0E01C6A927B0061BA01 /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0DF1C6A927B0061BA01 /* Acronym.m */; };
+		A206D0E31C6A93A70061BA01 /* AcronymResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A206D0E21C6A93A70061BA01 /* AcronymResultTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		A206D0CB1C6A65AE0061BA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A206D0D41C6A6A4E0061BA01 /* AcronymsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcronymsTableViewController.h; sourceTree = "<group>"; };
 		A206D0D51C6A6A4E0061BA01 /* AcronymsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcronymsTableViewController.m; sourceTree = "<group>"; };
+		A206D0D81C6A80820061BA01 /* AcromineAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcromineAPI.h; sourceTree = "<group>"; };
+		A206D0D91C6A80820061BA01 /* AcromineAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcromineAPI.m; sourceTree = "<group>"; };
+		A206D0DE1C6A927B0061BA01 /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acronym.h; sourceTree = "<group>"; };
+		A206D0DF1C6A927B0061BA01 /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acronym.m; sourceTree = "<group>"; };
+		A206D0E11C6A93A70061BA01 /* AcronymResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcronymResultTableViewCell.h; sourceTree = "<group>"; };
+		A206D0E21C6A93A70061BA01 /* AcronymResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcronymResultTableViewCell.m; sourceTree = "<group>"; };
 		BF64C24E1E3C4331126983DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,14 +105,10 @@
 		A206D0AE1C6A65AE0061BA01 /* AcronymsSearch */ = {
 			isa = PBXGroup;
 			children = (
-				A206D0B21C6A65AE0061BA01 /* AppDelegate.h */,
-				A206D0B31C6A65AE0061BA01 /* AppDelegate.m */,
-				A206D0D41C6A6A4E0061BA01 /* AcronymsTableViewController.h */,
-				A206D0D51C6A6A4E0061BA01 /* AcronymsTableViewController.m */,
-				A206D0B81C6A65AE0061BA01 /* Main.storyboard */,
-				A206D0BB1C6A65AE0061BA01 /* Assets.xcassets */,
-				A206D0BD1C6A65AE0061BA01 /* LaunchScreen.storyboard */,
-				A206D0C01C6A65AE0061BA01 /* Info.plist */,
+				A206D0DD1C6A813D0061BA01 /* AppDelegate */,
+				A206D0DB1C6A80FA0061BA01 /* Model */,
+				A206D0DC1C6A811C0061BA01 /* View */,
+				A206D0D71C6A80500061BA01 /* View Controllers */,
 				A206D0AF1C6A65AE0061BA01 /* Supporting Files */,
 			);
 			path = AcronymsSearch;
@@ -112,6 +117,7 @@
 		A206D0AF1C6A65AE0061BA01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A206D0C01C6A65AE0061BA01 /* Info.plist */,
 				A206D0B01C6A65AE0061BA01 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -124,6 +130,55 @@
 				A206D0CB1C6A65AE0061BA01 /* Info.plist */,
 			);
 			path = AcronymsSearchTests;
+			sourceTree = "<group>";
+		};
+		A206D0D71C6A80500061BA01 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A206D0D41C6A6A4E0061BA01 /* AcronymsTableViewController.h */,
+				A206D0D51C6A6A4E0061BA01 /* AcronymsTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A206D0DB1C6A80FA0061BA01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A206D0D81C6A80820061BA01 /* AcromineAPI.h */,
+				A206D0D91C6A80820061BA01 /* AcromineAPI.m */,
+				A206D0DE1C6A927B0061BA01 /* Acronym.h */,
+				A206D0DF1C6A927B0061BA01 /* Acronym.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A206D0DC1C6A811C0061BA01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A206D0E41C6A93AF0061BA01 /* TableViewCells */,
+				A206D0B81C6A65AE0061BA01 /* Main.storyboard */,
+				A206D0BB1C6A65AE0061BA01 /* Assets.xcassets */,
+				A206D0BD1C6A65AE0061BA01 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A206D0DD1C6A813D0061BA01 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A206D0B21C6A65AE0061BA01 /* AppDelegate.h */,
+				A206D0B31C6A65AE0061BA01 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A206D0E41C6A93AF0061BA01 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A206D0E11C6A93A70061BA01 /* AcronymResultTableViewCell.h */,
+				A206D0E21C6A93A70061BA01 /* AcronymResultTableViewCell.m */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 		BC396F5519B96470423550C3 /* Pods */ = {
@@ -286,8 +341,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A206D0DA1C6A80820061BA01 /* AcromineAPI.m in Sources */,
 				A206D0D61C6A6A4E0061BA01 /* AcronymsTableViewController.m in Sources */,
+				A206D0E01C6A927B0061BA01 /* Acronym.m in Sources */,
 				A206D0B41C6A65AE0061BA01 /* AppDelegate.m in Sources */,
+				A206D0E31C6A93A70061BA01 /* AcronymResultTableViewCell.m in Sources */,
 				A206D0B11C6A65AE0061BA01 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
