@@ -1,7 +1,8 @@
 # AcronymsSearch
 A simple app to look up the meanings of acronyms/initalims
 
-Note: Please install cocoapods and run "pod install" to download the dependencies and then open the xcworkspace file and build.
+# Note
+Please install cocoapods and run "pod install" to download the dependencies and then open the xcworkspace file and build.
 
 # Goal: 
 Create a simple app to look up the meanings of acronyms/initialisms.
